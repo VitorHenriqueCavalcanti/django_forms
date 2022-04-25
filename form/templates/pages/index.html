@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+
+</head>
+<body>
+    <div class="book">
+        <div class="page">
+            <div class="subpage">
+                <form action="">
+                    <fieldset>
+                        <legend><b>Inspeção de Placas</b></legend>
+                        <br>
+                        <div class="inputBox">
+                            <label for="data">Data</label>
+                            <input type="date" name="data" id="data"class="inputData" required>
+                            <br>
+                            <div class="InputUser">
+                                <input type="radio" name="nome" id="claudio" required>
+                                <label for="nome">Cláudio Rocha</label>
+                                <br>
+                                <input type="radio" name="nome" id="maike" required>
+                                <label for="nome">Maike Xavier</label>
+                                <br>
+                                <input type="radio" name="nome" id="outro" required>
+                                <label for="nome">Outro</label>
+                            </div>
+                        </div>
+                        <div class="inputBox">
+                            <label for="chk">A placa está instalada corretamente?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk1" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk2" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">A película refletiva está em perfeitas condições?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk3" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk4" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">Existe presença de ferrugem na placa?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk5" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk6" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">A placa está fixada com todos os parafusos?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk7" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk8" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">O suporte de perfil está bem fixado ao solo?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk9" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk10" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">Existe sinais de avaria no perfil metálico?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk11" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk12" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">Existe alguma avaria na pintura?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk13" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk14" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                            <label for="chk">Está faltando algum parafuso de fixação da placa?</label>
+                            <div class="check">
+                                <input type="checkbox" name="chk" id="chk15" class="inputCheckbox" value="op1">Sim
+                                <input type="checkbox" name="chk" id="chk16" class="inputCheckbox" value="op2">Não
+                            </div>
+                            <br>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="observacoes" id="obs" class="inputText">
+                            <label for="observacoes">Observações gerais</label>
+                            <br>
+                            <div class="inputPhoto">
+                                <label for="foto">Insira a foto da inspeção</label>
+                                <input type="file" name="foto" id="photo">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
